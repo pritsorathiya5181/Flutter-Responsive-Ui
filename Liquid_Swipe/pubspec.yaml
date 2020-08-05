@@ -60,6 +60,9 @@ flutter:
       fonts:
         - asset: assets/font/Product_Sans_Bold.ttf
         - asset: assets/font/Product_Sans_Regular.ttf
+    - family: Billy
+      fonts:
+        - asset: assets/font/font.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
