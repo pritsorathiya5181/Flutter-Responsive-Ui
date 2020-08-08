@@ -7,4 +7,7 @@
 
 ## Demo
 
-![A dmeo of the project](./demo.gif)
+<p align="center">
+<img src="https://github.com/pritsorathiya5181/FlutterAnimationApps/blob/master/Liquid_Swipe/demo.gif" width="310" height="640">
+</p>
+
