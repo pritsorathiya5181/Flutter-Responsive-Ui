@@ -1,5 +1,5 @@
 import 'package:Ticket_Animation/common/myapp_bar.dart';
-import 'package:Ticket_Animation/common/ticket_card_widget.dart';
+import 'package:Ticket_Animation/common/ticket_card.dart';
 import 'package:Ticket_Animation/common/toggle_widget.dart';
 import 'package:Ticket_Animation/model/myticket.dart';
 import 'package:flutter/material.dart';
@@ -37,7 +37,12 @@ class TicketList extends StatelessWidget {
             ListView(
               scrollDirection: Axis.vertical,
               shrinkWrap: true,
-              children: <Widget>[TicketCardWidget(ticket: ticket)],
+              children: <Widget>[
+                Hero(
+                  tag: ticket.id,
+                  child: TicketCardWidget(ticket: ticket),
+                ),
+              ],
             )
           ],
         ),
