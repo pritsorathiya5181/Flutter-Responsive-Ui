@@ -1,3 +1,4 @@
+import 'package:Ticket_Animation/common/FadePageRoute.dart';
 import 'package:Ticket_Animation/common/airport_detail_widget.dart';
 import 'package:Ticket_Animation/common/location_widget.dart';
 import 'package:Ticket_Animation/model/myticket.dart';
@@ -25,9 +26,8 @@ class TicketCardWidget extends StatelessWidget {
         elevation: showQR ? 8.0 : 0.0,
         child: InkWell(
           onTap: () {
-            Navigator.of(context).push(MaterialPageRoute(builder: (context) {
-              return TicketDetail(ticket: ticket);
-            }));
+            Navigator.of(context)
+                .push(FadePageRoute(widget: TicketDetail(ticket: ticket)));
           },
           child: Container(
             margin: const EdgeInsets.all(16.0),

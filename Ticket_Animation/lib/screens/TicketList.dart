@@ -38,12 +38,9 @@ class TicketList extends StatelessWidget {
               scrollDirection: Axis.vertical,
               shrinkWrap: true,
               children: <Widget>[
-                Hero(
-                  tag: ticket.id,
-                  child: TicketCardWidget(ticket: ticket),
-                ),
+                Hero(tag: ticket.id, child: TicketCardWidget(ticket: ticket)),
               ],
-            )
+            ),
           ],
         ),
       ),
