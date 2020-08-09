@@ -7,10 +7,6 @@ Started this project as a design mock up for Air Ticket Animation
 
 - In this design, you will see how the **common UI layouts** are created and how **hero animations** take place. In addition to this, you will also see how you can **customize the transition** between screen switching. Also, you will be introduced to a new library **after_layout**, which is essential if you want to perform some tasks after the layout has first drawn itself.
 
-## Video
-<video width="320" height="650" controls>
-  <source src="https://github.com/pritsorathiya5181/FlutterAnimationApps/blob/master/Ticket_Animation/demo/demo.mp4" type="video/mp4">
-</video>
 
 ## Screenshots
-<table style={border:"none"}><tr><td><img src="https://github.com/TechieBlossom/ticket_qr_hero_animations/blob/master/screenshots/ticket_listing.png" alt="Home Screen" width="300"/></td><td><img src="https://github.com/TechieBlossom/ticket_qr_hero_animations/blob/master/screenshots/ticket_detail.png" alt="Home Screen" width="300"/></td></tr></table>
+<table style={border:"none"}><tr><td><img src="https://github.com/pritsorathiya5181/FlutterAnimationApps/blob/master/Ticket_Animation/demo/ticket_listing.png" alt="Home Screen" width="300"/></td><td><img src="https://github.com/pritsorathiya5181/FlutterAnimationApps/blob/master/Ticket_Animation/demo/ticket_detail.png" alt="Home Screen" width="300"/></td></tr></table>
