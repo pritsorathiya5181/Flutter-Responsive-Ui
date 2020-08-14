@@ -21,10 +21,10 @@ class _HomeScreenState extends State<HomeScreen> {
         ..scale(scaleFactor)
         ..rotateY(isDrawerOpen ? -0.5 : 0),
       duration: Duration(milliseconds: 250),
-      color: Colors.grey[200],
-      // decoration: BoxDecoration(
-      //     color: Colors.grey[200],
-      //     borderRadius: BorderRadius.circular(isDrawerOpen ? 40 : 0.0)),
+      // color: Colors.grey[200],
+      decoration: BoxDecoration(
+          color: Colors.grey[200],
+          borderRadius: BorderRadius.circular(isDrawerOpen ? 40 : 0.0)),
       child: Column(
         children: [
           SizedBox(
@@ -94,32 +94,69 @@ class _HomeScreenState extends State<HomeScreen> {
           Container(
             height: 120,
             child: ListView.builder(
-                scrollDirection: Axis.horizontal,
-                itemCount: categories.length,
-                itemBuilder: (context, index) {
-                  return Container(
-                    child: Column(
-                      children: [
-                        Container(
-                          padding: EdgeInsets.all(10),
-                          margin: EdgeInsets.only(left: 20),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            boxShadow: shadowList,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: Image.asset(
-                            categories[index]['iconPath'],
-                            height: 50,
-                            width: 50,
-                            color: Colors.grey[700],
-                          ),
+              scrollDirection: Axis.horizontal,
+              itemCount: categories.length,
+              itemBuilder: (context, index) {
+                return Container(
+                  child: Column(
+                    children: [
+                      Container(
+                        padding: EdgeInsets.all(10),
+                        margin: EdgeInsets.only(left: 20),
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          boxShadow: shadowList,
+                          borderRadius: BorderRadius.circular(10),
                         ),
-                        Text(categories[index]['name']),
-                      ],
-                    ),
-                  );
-                }),
+                        child: Image.asset(
+                          categories[index]['iconPath'],
+                          height: 50,
+                          width: 50,
+                          color: Colors.grey[700],
+                        ),
+                      ),
+                      Text(categories[index]['name']),
+                    ],
+                  ),
+                );
+              },
+            ),
+          ),
+          Container(
+            height: 240,
+            margin: EdgeInsets.symmetric(horizontal: 20),
+            child: Row(
+              children: [
+                Expanded(
+                  child: Stack(
+                    children: [
+                      Container(
+                        margin: EdgeInsets.only(top: 40),
+                        decoration: BoxDecoration(
+                          color: Colors.blueGrey[300],
+                          borderRadius: BorderRadius.circular(20),
+                          boxShadow: shadowList,
+                        ),
+                      ),
+                      Align(
+                        child: Image.asset('assets/images/pet-cat2.png'),
+                      )
+                    ],
+                  ),
+                ),
+                Expanded(
+                  child: Container(
+                    margin: EdgeInsets.only(top: 60, bottom: 20),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(20),
+                          bottomRight: Radius.circular(20),
+                        )),
+                  ),
+                ),
+              ],
+            ),
           )
         ],
       ),
