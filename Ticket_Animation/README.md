@@ -1,16 +1,12 @@
 # Ticket_Animation
 
-A new Flutter project.
+Hero Animation Mock for Air Ticket from Dribbble
 
-## Getting Started
+Started this project as a design mock up for Air Ticket Animation
+**Design: ** - https://dribbble.com/shots/5850392-Dynamic-boarding-pass-interface
 
-This project is a starting point for a Flutter application.
+- In this design, you will see how the **common UI layouts** are created and how **hero animations** take place. In addition to this, you will also see how you can **customize the transition** between screen switching. Also, you will be introduced to a new library **after_layout**, which is essential if you want to perform some tasks after the layout has first drawn itself.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Screenshots
+<table style={border:"none"}><tr><td><img src="https://github.com/pritsorathiya5181/FlutterAnimationApps/blob/master/Ticket_Animation/demo/ticket_listing.png" alt="Home Screen" width="300"/></td><td><img src="https://github.com/pritsorathiya5181/FlutterAnimationApps/blob/master/Ticket_Animation/demo/ticket_detail.png" alt="Home Screen" width="300"/></td></tr></table>
