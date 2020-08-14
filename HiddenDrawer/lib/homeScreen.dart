@@ -73,7 +73,10 @@ class _HomeScreenState extends State<HomeScreen> {
                       ),
                     ],
                   ),
-                  CircleAvatar()
+                  CircleAvatar(
+                    backgroundImage: NetworkImage(
+                        'https://www.woolha.com/media/2020/03/eevee.png'),
+                  ),
                 ],
               ),
             ),
