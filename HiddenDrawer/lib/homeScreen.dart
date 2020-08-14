@@ -21,10 +21,10 @@ class _HomeScreenState extends State<HomeScreen> {
         ..scale(scaleFactor)
         ..rotateY(isDrawerOpen ? -0.5 : 0),
       duration: Duration(milliseconds: 250),
-      // color: Colors.white,
-      decoration: BoxDecoration(
-          color: Colors.grey[200],
-          borderRadius: BorderRadius.circular(isDrawerOpen ? 40 : 0.0)),
+      color: Colors.grey[200],
+      // decoration: BoxDecoration(
+      //     color: Colors.grey[200],
+      //     borderRadius: BorderRadius.circular(isDrawerOpen ? 40 : 0.0)),
       child: Column(
         children: [
           SizedBox(
@@ -75,6 +75,52 @@ class _HomeScreenState extends State<HomeScreen> {
               ],
             ),
           ),
+          Container(
+            padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+            margin: EdgeInsets.symmetric(vertical: 30, horizontal: 20),
+            decoration: BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.circular(20),
+            ),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Icon(Icons.search),
+                Text('Search pet to adopt'),
+                Icon(Icons.settings),
+              ],
+            ),
+          ),
+          Container(
+            height: 120,
+            child: ListView.builder(
+                scrollDirection: Axis.horizontal,
+                itemCount: categories.length,
+                itemBuilder: (context, index) {
+                  return Container(
+                    child: Column(
+                      children: [
+                        Container(
+                          padding: EdgeInsets.all(10),
+                          margin: EdgeInsets.only(left: 20),
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            boxShadow: shadowList,
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: Image.asset(
+                            categories[index]['iconPath'],
+                            height: 50,
+                            width: 50,
+                            color: Colors.grey[700],
+                          ),
+                        ),
+                        Text(categories[index]['name']),
+                      ],
+                    ),
+                  );
+                }),
+          )
         ],
       ),
     );
